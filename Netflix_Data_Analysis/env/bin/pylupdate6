@@ -1,2 +1,0 @@
-#!/bin/sh
-exec /home/prabh/Netflix_data/env/bin/python -m PyQt6.lupdate.pylupdate ${1+"$@"}
