@@ -1,0 +1,13 @@
+prefix=/home/prabh/Netflix_data/env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.13.5
+Description: libXML library version2.
+Requires.private:  icu-i18n
+Libs: -L${libdir} -lxml2 
+Libs.private:  -L/home/prabh/Netflix_data/env/lib -lz -L/home/prabh/Netflix_data/env/lib -llzma  -L/home/prabh/Netflix_data/env/lib  -lm   
+Cflags: -I${includedir}/libxml2 -I/home/prabh/Netflix_data/env/include 

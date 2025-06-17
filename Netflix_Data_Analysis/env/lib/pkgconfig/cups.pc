@@ -1,0 +1,29 @@
+#
+# CUPS pkg-config file
+#
+# Copyright © 2021-2022 by OpenPrinting.
+#
+# Licensed under Apache License v2.0.  See the file "LICENSE" for more
+# information.
+#
+
+prefix=/home/prabh/Netflix_data/env
+exec_prefix=/home/prabh/Netflix_data/env
+includedir=/home/prabh/Netflix_data/env/include
+libdir=/home/prabh/Netflix_data/env/lib
+
+cups_api_version="2.4"
+cups_build="cups-2.4.2"
+cups_datadir=/home/prabh/Netflix_data/env/share/cups
+cups_serverbin=/home/prabh/Netflix_data/env/lib/cups
+cups_serverroot=/home/prabh/Netflix_data/env/etc/cups
+
+Name: CUPS
+Description: CUPS API Library
+Version: 2.4.2
+URL: https://openprinting.github.io/cups/
+Cflags:  -I/home/prabh/Netflix_data/env/include
+Libs: -L/home/prabh/Netflix_data/env/lib -lcups
+
+Requires.private:  openssl
+Libs.private:  -lz
