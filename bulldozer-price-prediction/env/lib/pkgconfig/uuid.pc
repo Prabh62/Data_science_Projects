@@ -1,0 +1,11 @@
+prefix=/home/prabh/bulldozer-price-prediction-proj/env
+exec_prefix=/home/prabh/bulldozer-price-prediction-proj/env
+libdir=/home/prabh/bulldozer-price-prediction-proj/env/lib
+includedir=/home/prabh/bulldozer-price-prediction-proj/env/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.32.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

@@ -1,0 +1,12 @@
+prefix=/home/prabh/bulldozer-price-prediction-proj/env
+exec_prefix=${prefix}
+libdir=/home/prabh/bulldozer-price-prediction-proj/env/lib
+includedir=/home/prabh/bulldozer-price-prediction-proj/env/include
+
+Name: absl_pretty_function
+Description: Abseil pretty_function library
+URL: https://abseil.io/
+Version: 20240116
+Requires:
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX
